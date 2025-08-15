@@ -1,0 +1,89 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\2001m\\Downloads\\TodoApp\\TodoApp\\TodoApp.Api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{30C3DA3C-C5AE-4C20-A64F-782C38D0D238}|TodoApp.Api\\TodoApp.Api.csproj|c:\\users\\2001m\\downloads\\todoapp\\todoapp\\todoapp.api\\todoapp.api\\migrations\\tododbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30C3DA3C-C5AE-4C20-A64F-782C38D0D238}|TodoApp.Api\\TodoApp.Api.csproj|solutionrelative:todoapp.api\\migrations\\tododbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30C3DA3C-C5AE-4C20-A64F-782C38D0D238}|TodoApp.Api\\TodoApp.Api.csproj|c:\\users\\2001m\\downloads\\todoapp\\todoapp\\todoapp.api\\todoapp.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{30C3DA3C-C5AE-4C20-A64F-782C38D0D238}|TodoApp.Api\\TodoApp.Api.csproj|solutionrelative:todoapp.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30C3DA3C-C5AE-4C20-A64F-782C38D0D238}|TodoApp.Api\\TodoApp.Api.csproj|c:\\users\\2001m\\downloads\\todoapp\\todoapp\\todoapp.api\\todoapp.api\\controllers\\todocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30C3DA3C-C5AE-4C20-A64F-782C38D0D238}|TodoApp.Api\\TodoApp.Api.csproj|solutionrelative:todoapp.api\\controllers\\todocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30C3DA3C-C5AE-4C20-A64F-782C38D0D238}|TodoApp.Api\\TodoApp.Api.csproj|c:\\users\\2001m\\downloads\\todoapp\\todoapp\\todoapp.api\\todoapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30C3DA3C-C5AE-4C20-A64F-782C38D0D238}|TodoApp.Api\\TodoApp.Api.csproj|solutionrelative:todoapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\2001m\\Downloads\\TodoApp\\TodoApp\\TodoApp.Api\\TodoApp.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "TodoApp.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\2001m\\Downloads\\TodoApp\\TodoApp\\TodoApp.Api\\TodoApp.Api\\appsettings.json",
+              "RelativeToolTip": "TodoApp.Api\\appsettings.json",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-10T17:15:40.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TodoDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\2001m\\Downloads\\TodoApp\\TodoApp\\TodoApp.Api\\TodoApp.Api\\Migrations\\TodoDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "TodoApp.Api\\Migrations\\TodoDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\2001m\\Downloads\\TodoApp\\TodoApp\\TodoApp.Api\\TodoApp.Api\\Migrations\\TodoDbContextModelSnapshot.cs",
+              "RelativeToolTip": "TodoApp.Api\\Migrations\\TodoDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAqwDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-10T17:13:17.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TodoController.cs",
+              "DocumentMoniker": "C:\\Users\\2001m\\Downloads\\TodoApp\\TodoApp\\TodoApp.Api\\TodoApp.Api\\Controllers\\TodoController.cs",
+              "RelativeDocumentMoniker": "TodoApp.Api\\Controllers\\TodoController.cs",
+              "ToolTip": "C:\\Users\\2001m\\Downloads\\TodoApp\\TodoApp\\TodoApp.Api\\TodoApp.Api\\Controllers\\TodoController.cs",
+              "RelativeToolTip": "TodoApp.Api\\Controllers\\TodoController.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAkwFgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T12:47:23.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\2001m\\Downloads\\TodoApp\\TodoApp\\TodoApp.Api\\TodoApp.Api\\Program.cs",
+              "RelativeDocumentMoniker": "TodoApp.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\2001m\\Downloads\\TodoApp\\TodoApp\\TodoApp.Api\\TodoApp.Api\\Program.cs",
+              "RelativeToolTip": "TodoApp.Api\\Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAqwBkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T12:03:33.302Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

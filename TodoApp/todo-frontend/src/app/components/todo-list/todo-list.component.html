@@ -1,0 +1,127 @@
+<!-- src/app/components/todo-list/todo-list.component.html -->
+<div class="todo-list-container">
+  <!-- Error Message -->
+  <div *ngIf="error" class="alert alert-error">
+    <span>{{ error }}</span>
+    <button (click)="clearError()" class="alert-close">&times;</button>
+  </div>
+
+  <!-- Todo Form -->
+  <app-todo-form 
+    [todo]="editingTodo"
+    [isEditing]="isEditing"
+    (todoSubmit)="onTodoSubmit($event)"
+    (cancel)="cancelEdit()">
+  </app-todo-form>
+
+  <!-- Stats and Filters -->
+  <div class="todo-stats-filters">
+    <div class="todo-stats">
+      <div class="stat">
+        <span class="stat-number">{{ todos.length }}</span>
+        <span class="stat-label">Toplam</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">{{ pendingCount }}</span>
+        <span class="stat-label">Devam Eden</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">{{ completedCount }}</span>
+        <span class="stat-label">Tamamlanan</span>
+      </div>
+    </div>
+
+    <div class="todo-filters">
+      <button 
+        (click)="setFilter('all')" 
+        [class.active]="filter === 'all'"
+        class="filter-btn">
+        Tümü
+      </button>
+      <button 
+        (click)="setFilter('pending')" 
+        [class.active]="filter === 'pending'"
+        class="filter-btn">
+        Devam Eden
+      </button>
+      <button 
+        (click)="setFilter('completed')" 
+        [class.active]="filter === 'completed'"
+        class="filter-btn">
+        Tamamlanan
+      </button>
+    </div>
+  </div>
+
+  <!-- Search Section -->
+  <div class="search-section">
+    <div class="search-group">
+      <div class="search-input-group">
+        <label for="searchTerm">Başlık/Açıklama Ara:</label>
+        <input 
+          type="text" 
+          id="searchTerm"
+          [(ngModel)]="searchTerm" 
+          placeholder="Görev ara..."
+          class="search-input">
+      </div>
+      
+      <div class="search-input-group">
+        <label for="searchId">ID'ye Göre Ara:</label>
+        <input 
+          type="number" 
+          id="searchId"
+          [(ngModel)]="searchId" 
+          placeholder="ID numarası..."
+          class="search-input">
+      </div>
+
+      <button 
+        (click)="clearSearch()" 
+        class="clear-search-btn"
+        *ngIf="searchTerm || searchId">
+        Temizle
+      </button>
+    </div>
+  </div>
+
+  <!-- Loading State -->
+  <div *ngIf="loading" class="loading">
+    <div class="loading-spinner"></div>
+    <p>Görevler yükleniyor...</p>
+  </div>
+
+  <!-- Empty State -->
+  <div *ngIf="!loading && filteredTodos.length === 0" class="empty-state">
+    <div class="empty-icon">📝</div>
+    <h3>
+      <span *ngIf="filter === 'all'">Henüz görev yok</span>
+      <span *ngIf="filter === 'pending'">Devam eden görev yok</span>
+      <span *ngIf="filter === 'completed'">Tamamlanan görev yok</span>
+    </h3>
+    <p>
+      <span *ngIf="filter === 'all'">Yukarıdaki formu kullanarak ilk görevini ekle!</span>
+      <span *ngIf="filter === 'pending'">Tüm görevler tamamlanmış. Harika iş!</span>
+      <span *ngIf="filter === 'completed'">Henüz tamamlanmış görev yok.</span>
+    </p>
+  </div>
+
+  <!-- Todo List -->
+  <div *ngIf="!loading && filteredTodos.length > 0" class="todos">
+    <h2 class="todos-title">
+      <span *ngIf="filter === 'all'">Tüm Görevler ({{ filteredTodos.length }})</span>
+      <span *ngIf="filter === 'pending'">Devam Eden Görevler ({{ filteredTodos.length }})</span>
+      <span *ngIf="filter === 'completed'">Tamamlanan Görevler ({{ filteredTodos.length }})</span>
+    </h2>
+
+    <div class="todo-items">
+      <app-todo-item 
+        *ngFor="let todo of filteredTodos; trackBy: trackByTodoId"
+        [todo]="todo"
+        (edit)="onEditTodo($event)"
+        (delete)="onDeleteTodo($event)"
+        (toggleComplete)="onToggleComplete($event)">
+      </app-todo-item>
+    </div>
+  </div>
+</div>
